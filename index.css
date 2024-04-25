@@ -97,23 +97,25 @@ a:active,a:link,a:visited{
 }
 
 #technical{
-    height: 100vh;
+    
     display: flex;
     justify-content: space-evenly;
-    padding: 70px 10px 10px 10px;
+    flex-wrap: wrap;
+    padding: 70px 10px 50px 10px;
+    box-shadow: inset 1px 1px 10px 5px #21b2a6;
 }
 #technical>section>div{
     box-shadow: inset 1px 1px 10px 5px lightblue;
     transition: transform 0.5s;
     border-radius: 10px;
     
+    
 }
 #technical>section>div:hover{
     border: none;
     box-shadow:  1px 1px 10px 5px lightblue;
-    transform: scale(1.02);
-    
-    
+    transform:scale(1.02);
+
 }
 #technical>section>div>ul{
     list-style: none;
@@ -121,7 +123,7 @@ a:active,a:link,a:visited{
     padding: 16px 32px;
 }
 #technical>section>div>ul>li{
-    width: 200px;
+    width: 220px;
     margin: 15px 0px;
     border: 1px solid greenyellow;
 }
@@ -147,6 +149,43 @@ a:active,a:link,a:visited{
   text-align: justify;
 
 }
+
+#Projects{
+    height: 100vh;
+    box-shadow: inset 1px 1px 10px 4px #2f1e15;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 70px 40px 40px 40px;
+    
+}
+#Projects>section{
+    border: 1px solid orange;
+    width: 45%;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 5px;
+
+    
+}   
+#Projects>section>strong{
+    display: block;
+    text-align: center;
+    color: orangered;
+    padding: 15px 0px;
+    text-decoration: underline;
+}
+#Projects>section>span{
+    text-decoration: underline;
+}
+#Projects>section>div>strong{
+    display: block;
+    text-decoration: underline;
+    color: crimson;
+    
+}
+
+/* responsive */
 @media screen and (min-width:300px) and (max-width:700px){
     .div1-2{
         display: flex;
